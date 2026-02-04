@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./api
+
+  worker:
+    build: ./worker
+
+  redis:
+    image: redis:7
+
+  mongo:
+    image: mongo:6
