@@ -2,7 +2,8 @@ export const processTask = async (task) => {
     const { type, payload } = task;
 
     if (payload?.shouldFail) {
-        console.log("Intentional failure");
+        console.log("Intentional failure - throwing error");
+        throw new Error("Task configured to fail for testing");
     }
 
     if (type == "email") {
