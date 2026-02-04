@@ -1,6 +1,33 @@
-node_modules
+# Dependencies
+/node_modules
+/*/node_modules
+
+# Environment Variables
 .env
 .env.*
-dist
-coverage
+api/.env
+worker/.env
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Testing/Build
+coverage/
+dist/
+build/
+
+# Miscellaneous
 ref.txt
+*.log
+.DS_Store
+
